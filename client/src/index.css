@@ -1,0 +1,138 @@
+:root {
+  /* Moody Bloom Design Tokens */
+  --bg-app: #FAF8F5;
+  --bg-sidebar: #FFFFFF;
+  --bg-header: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --bg-secondary: #F4F2F0;
+  --bg-blush-light: #F7E8EC;
+  --bg-blush-subtle: #FAF0F2;
+  --bg-sage-light: #E7ECE3;
+  --bg-silver: #F4F2F0;
+  --bg-silver-subtle: #FAF8F5;
+  --bg-silver-hover: #F8EEEE;
+  --bg-silver-gradient: #FFFFFF;
+
+  /* Borders */
+  --border-subtle: #E6E4E2;
+  --border-default: #E6E4E2;
+  --border-hover: #D9D6D3;
+  --border-focus: #8F2945;
+  --border-blush: #E5A0A4;
+  --border-sage: #C6D1BF;
+
+  /* Primary Accent: Deep Burgundy (#8F2945) */
+  --accent-primary: #8F2945;
+  --accent-primary-hover: #6F2038;
+  --accent-primary-secondary: #6F2038;
+  --accent-primary-light: #F7E8EC;
+  --accent-primary-border: #E5A0A4;
+
+  /* Brand / AI Accent Dusty Rose & Burgundy */
+  --accent-rose: #C8798A;
+  --accent-blush: #E5A0A4;
+  --accent-blue: #8F2945;
+  --accent-blue-hover: #6F2038;
+  --accent-blue-secondary: #6F2038;
+  --accent-blue-light: #F7E8EC;
+  --accent-blue-border: #E5A0A4;
+
+  /* Legacy alias mappings pointing to Moody Bloom accents */
+  --accent-green: #89977F;
+  --accent-green-dark: #6F2038;
+  --accent-green-light: #E7ECE3;
+  --accent-green-border: #C6D1BF;
+
+  /* Semantic Muted Sage tokens (#89977F) */
+  --semantic-success: #89977F;
+  --semantic-success-dark: #57634F;
+  --semantic-success-light: #E7ECE3;
+  --semantic-success-border: #C6D1BF;
+
+  /* Semantic Warning tokens */
+  --accent-amber: #B07A35;
+  --accent-amber-light: #FCF7EE;
+  --accent-amber-border: #EED8B6;
+
+  /* Semantic Error tokens */
+  --accent-danger: #C75454;
+  --accent-danger-light: #FDF2F2;
+  --accent-danger-border: #F5C7C7;
+
+  /* Typography */
+  --text-primary: #29272A;
+  --text-charcoal-dark: #29272A;
+  --text-secondary: #686467;
+  --text-muted: #929093;
+  --text-dim: #929093;
+
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+
+  /* Spacing System */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+
+  /* Radius & Shadows */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+
+  --shadow-sm: 0 1px 3px rgba(41, 39, 42, 0.03);
+  --shadow-md: 0 4px 14px rgba(41, 39, 42, 0.05);
+  --shadow-lg: 0 8px 24px rgba(41, 39, 42, 0.07);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-app);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Custom Clean Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-app);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D9D6D3;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C8798A;
+}
+
+code, pre {
+  font-family: var(--font-mono);
+}
